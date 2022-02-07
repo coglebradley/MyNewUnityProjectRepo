@@ -1,0 +1,39 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+/*
+* (Conner Ogle)
+* (Prototype 2)
+* (Controls player movement)
+*/
+
+public class PlayerController : MonoBehaviour
+{
+
+    public float horizontalInput;
+    public float speed = 10.0f;
+    private float xRange = 9;
+
+    // Update is called once per frame
+    void Update()
+    {
+        horizontalInput = Input.GetAxis("Horizontal");
+
+        //transform horizontally with input
+
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+
+        //keep player in bounds
+        if (transform.position.x < -xRange)
+        {
+            transform.position = new Vector3(-xRange, transform.position.y, transform.position.z);
+
+        }
+
+        if (transform.position.x > xRange)
+        {
+
+            transform.position = new Vector3(xRange, transform.position.y, transform.position.z);
+        }
+    }
+}
