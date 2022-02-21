@@ -1,10 +1,16 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Challenge 3)
+* (Player movement, sounds, and collision detections)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControllerX : MonoBehaviour
 {
     public bool gameOver;
+    public int score = 0;
 
     public float floatForce;
     private float gravityModifier = 1.5f;
@@ -16,17 +22,23 @@ public class PlayerControllerX : MonoBehaviour
     private AudioSource playerAudio;
     public AudioClip moneySound;
     public AudioClip explodeSound;
+    public AudioClip bounceSound;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        Physics.gravity *= gravityModifier;
+        //Physics.gravity *= gravityModifier;
         playerAudio = GetComponent<AudioSource>();
+        playerRb = GetComponent<Rigidbody>();
 
         // Apply a small upward force at the start of the game
         playerRb.AddForce(Vector3.up * 5, ForceMode.Impulse);
-
+        //makes sure gravity isn't increased on a reload
+        if (Physics.gravity.y > -10)
+        {
+            Physics.gravity *= gravityModifier;
+        }
     }
 
     // Update is called once per frame
@@ -35,7 +47,13 @@ public class PlayerControllerX : MonoBehaviour
         // While space is pressed and player is low enough, float up
         if (Input.GetKey(KeyCode.Space) && !gameOver)
         {
-            playerRb.AddForce(Vector3.up * floatForce);
+            //determines if player is within a bound
+            if (isLowEnough())
+            {
+                //moves player up
+                playerRb.AddForce(Vector3.up * floatForce);
+            }
+
         }
     }
 
@@ -57,9 +75,34 @@ public class PlayerControllerX : MonoBehaviour
             fireworksParticle.Play();
             playerAudio.PlayOneShot(moneySound, 1.0f);
             Destroy(other.gameObject);
+            //increments score on hitting money
+            score++;
 
         }
+        else if (other.gameObject.CompareTag("Ground"))
+        {
+            //bounces balloon up after colliding with ground
+            playerRb.AddForce(Vector3.up * 10, ForceMode.Impulse);
+            //plays audio too
+            playerAudio.PlayOneShot(bounceSound, 2.0f);
+        }
 
+    }
+    //a boolean to determine the bound the play is restricted by
+    private bool isLowEnough()
+    {
+        //can't go too high
+        if(transform.position.y < 15)
+        {
+            return true;
+        }
+        else
+        {
+            //If the balloon is moving fast it will take a long time to return to the player screen,
+            //so adds a force to help make that time shorter
+            playerRb.AddForce(Vector3.down * 30);
+            return false;
+        }
     }
 
 }

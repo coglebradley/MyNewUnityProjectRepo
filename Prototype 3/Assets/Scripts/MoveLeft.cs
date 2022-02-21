@@ -25,10 +25,10 @@ public class MoveLeft : MonoBehaviour
     {
         if (playerControllerScript.gameOver == false)
         {
-            //moves the player left
+            //moves the object left
             transform.Translate(Vector3.left * Time.deltaTime * speed);
         }
-        //if we are out of bounds ot the left and the gameObject is an Obstacle, destroy this gameObject
+        //if we are out of bounds to the left and the gameObject is an Obstacle, destroy this gameObject
         if(transform.position.x < leftBound && gameObject.CompareTag("Obstacle"))
         {
             Destroy(gameObject);
