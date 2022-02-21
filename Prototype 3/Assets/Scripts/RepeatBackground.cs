@@ -1,8 +1,7 @@
 ﻿/*
 * (Conner Ogle)
 * (Prototype 3)
-* (Brief description of the code in the file.
-* For example: controls player movement)
+* (Makes the background repeat to give illusion of player actually moving)
 */
 using System.Collections;
 using System.Collections.Generic;

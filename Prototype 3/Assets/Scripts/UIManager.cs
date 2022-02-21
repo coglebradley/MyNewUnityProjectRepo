@@ -1,8 +1,7 @@
 ﻿/*
 * (Conner Ogle)
 * (Prototype 3)
-* (Brief description of the code in the file.
-* For example: controls player movement)
+* (Deals with ui along with victory and loss conditions)
 */
 using System.Collections;
 using System.Collections.Generic;

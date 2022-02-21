@@ -1,7 +1,7 @@
 ﻿/*
 * (Conner Ogle)
 * (Prototype 3)
-* (Makes the objects continously move left and determines the bound in which they can't pass)
+* (Makes the objects continously move left and determines the bound in which they'll be destroyed)
 */
 using System.Collections;
 using System.Collections.Generic;
