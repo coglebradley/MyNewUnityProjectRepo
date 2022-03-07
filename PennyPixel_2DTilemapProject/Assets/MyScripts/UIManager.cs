@@ -42,8 +42,6 @@ public class UIManager : MonoBehaviour
             gameOver = true;
             won = true;
 
-            //playerControllerScript.StopRunning();
-
             scoreText.text = "You Win!" + "\n" + "Press R to Try Again!";
         }
 
