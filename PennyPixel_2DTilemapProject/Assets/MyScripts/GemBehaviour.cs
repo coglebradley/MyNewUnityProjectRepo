@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 5A)
+* (Deals with gem animation and score incrementing on collision)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
