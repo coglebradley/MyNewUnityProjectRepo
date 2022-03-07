@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 5A)
+* (Player controller script)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
