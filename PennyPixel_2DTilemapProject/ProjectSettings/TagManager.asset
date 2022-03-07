@@ -45,14 +45,14 @@ TagManager:
   - name: Platforms
     uniqueID: 2744899083
     locked: 0
+  - name: Plants
+    uniqueID: 3578692615
+    locked: 0
   - name: Main
     uniqueID: 1907945055
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 0
-  - name: Plants
-    uniqueID: 3578692615
     locked: 0
   - name: Foreground
     uniqueID: 1632157909
