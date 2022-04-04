@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed = 10.0f;
     public Rigidbody rb;
-    public Vector2 movement;
+    public Vector3 movement;
 
     // Start is called before the first frame update
     void Start()
@@ -17,14 +17,16 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        movement = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        
+        movement = new Vector3(Input.GetAxis("Horizontal"), 0.0f, Input.GetAxis("Vertical"));
     }
     void FixedUpdate()
     {
         moveBall(movement);
     }
-    void moveBall(Vector2 direction)
+    void moveBall(Vector3 direction)
     {
         rb.AddForce(direction * speed);
     }
+    
 }
