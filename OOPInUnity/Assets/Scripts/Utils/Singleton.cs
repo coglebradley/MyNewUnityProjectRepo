@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 6)
+* (Singleton class)
+*/
+using System.Collections;
 using UnityEngine;
 
 public class Singleton<T> : MonoBehaviour where T : Singleton<T>

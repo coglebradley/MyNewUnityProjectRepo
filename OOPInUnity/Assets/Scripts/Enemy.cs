@@ -1,3 +1,8 @@
+/*
+* (Conner Ogle)
+* (Assignment 6)
+* (Enemy class from notes)
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

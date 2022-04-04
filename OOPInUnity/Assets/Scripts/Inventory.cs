@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 6)
+* (Basic inventory from video)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

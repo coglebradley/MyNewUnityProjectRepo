@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 6)
+* (Manages the scenes and menus)
+*/
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -9,6 +14,7 @@ public class GameManager : Singleton<GameManager>
     private string CurrentLevelName = string.Empty;
 
     public GameObject pauseMenu;
+
 
    /* #region This code makes this class a Singleton
     public static GameManager instance;

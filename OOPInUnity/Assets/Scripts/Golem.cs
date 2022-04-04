@@ -1,3 +1,8 @@
+/*
+* (Conner Ogle)
+* (Assignment 6)
+* (A subtype of enemy)
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

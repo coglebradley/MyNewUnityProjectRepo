@@ -1,3 +1,8 @@
+/*
+* (Conner Ogle)
+* (Assignment 6)
+* (Controlling the ball's movement)
+*/
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;

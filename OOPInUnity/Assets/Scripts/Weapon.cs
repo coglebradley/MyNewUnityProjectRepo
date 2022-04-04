@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 6)
+* (weapon from video)
+*/
+using System.Collections;
 using UnityEngine;
 
 public class Weapon : MonoBehaviour

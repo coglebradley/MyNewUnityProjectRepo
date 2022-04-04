@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Assignment 6)
+* (Interface for enemy)
+*/
+using System.Collections;
 using UnityEngine;
 
 
