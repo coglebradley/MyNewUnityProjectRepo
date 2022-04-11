@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Prototype 4)
+* (Controls player movement)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

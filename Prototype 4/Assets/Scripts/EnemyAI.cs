@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Prototype 4)
+* (Enemy AI that follows player)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 

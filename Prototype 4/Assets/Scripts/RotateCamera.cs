@@ -1,4 +1,9 @@
-﻿using System.Collections;
+﻿/*
+* (Conner Ogle)
+* (Prototype 4)
+* (Allows camera rotation)
+*/
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
