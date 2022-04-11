@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private float powerupStrength = 15.0f;
 
     public GameObject powerUpIndicator;
+
+    public bool gameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +32,12 @@ public class PlayerController : MonoBehaviour
 
         //move our powerup indicator to the ground below our player
         powerUpIndicator.transform.position = transform.position + new Vector3(0, -0.5f, 0);
-        
+
+        if (transform.position.y < -10)
+        {
+            gameOver = true;
+        }
+
     }
     private void FixedUpdate()
     {
