@@ -1,7 +1,7 @@
 /*
 * (Conner Ogle)
 * (Assignment 9)
-* (Script for level generator)
+* (Script for generating level in scene 3)
 */
 using UnityEngine;
 using UnityEngine.AI;

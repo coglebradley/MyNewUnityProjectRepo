@@ -1,7 +1,7 @@
 ﻿/*
 * (Conner Ogle)
 * (Assignment 9)
-* (Script for controlling player using NavMesh)
+* (Script for controlling player with the animations)
 */
 using System.Collections;
 using System.Collections.Generic;

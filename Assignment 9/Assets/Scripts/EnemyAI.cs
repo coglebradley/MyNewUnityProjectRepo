@@ -1,7 +1,7 @@
 ﻿/*
 * (Conner Ogle)
 * (Assignment 9)
-* (Script for enemy AI)
+* (Script for enemy AI and its animations)
 */
 using System.Collections;
 using System.Collections.Generic;
